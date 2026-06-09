@@ -24,6 +24,11 @@
       "id": "5",
       "title": "Read a book",
       "completed": false
+    },
+    {
+      "id": "8fa9",
+      "title": "New Task",
+      "completed": true
     }
   ]
 }

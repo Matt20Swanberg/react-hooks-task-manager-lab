@@ -3,7 +3,11 @@ import TaskList from "./TaskList";
 import { TaskContext } from "../context/TaskContext";
 
 function SearchBar() {
+
+  // Local form state for the task being created.
   const searchRef = useRef(null);
+
+  // Accesses the global task creation function from context.
   const { searchTask, setSearchQuery } = useContext(TaskContext)
 
   function handleSearch() {
@@ -13,7 +17,7 @@ function SearchBar() {
   return (
     <div>
       <input
-      ref={searchRef}
+        ref={searchRef}
         type="text"
         placeholder="Search tasks..."
         value={searchTask}
