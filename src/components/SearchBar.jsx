@@ -3,22 +3,23 @@ import TaskList from "./TaskList";
 import { TaskContext } from "../context/TaskContext";
 
 function SearchBar() {
-  const [query, setQuery] = useState("");
+  const searchRef = useRef(null);
+  const { searchTask, setSearchQuery } = useContext(TaskContext)
 
-  function handleSearch(e) {
-    setQuery(e.target.value);
+  function handleSearch() {
+    setSearchQuery(searchRef.current.value);
   }
-
 
   return (
     <div>
       <input
+      ref={searchRef}
         type="text"
         placeholder="Search tasks..."
-        value={query}
+        value={searchTask}
         onChange={handleSearch}
       />
-      <TaskList query={query}/>
+      <TaskList />
     </div>
   );
 }
