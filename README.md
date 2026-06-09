@@ -26,15 +26,9 @@ A React application that allows users to create, manage, and search tasks. This 
   - `useId`
   - `useRef`
 
-## Screenshots
+## Demo
 
-### Task Manager Application
-
-Add a screenshot of the completed application below:
-
-```markdown
-![Task Manager Screenshot](./screenshots/screenshot.gif)
-```
+![Task Manager Demo](./screenshots/screenshot.gif)
 
 ## Installation
 
